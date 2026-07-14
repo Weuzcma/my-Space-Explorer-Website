@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Explorer</title>
+    <meta
+      name="description"
+      content="A polished space exploration website featuring Earth, Mars, Saturn, and the importance of space travel."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="stars" aria-hidden="true"></div>
+    <div class="shooting-stars" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <header>
+      <a href="#home" class="logo">Space<span>Explorer</span></a>
+      <button class="menu-btn" aria-label="Toggle navigation">☰</button>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#earth">Earth</a>
+        <a href="#mars">Mars</a>
+        <a href="#saturn">Saturn</a>
+        <a href="#missions">Missions</a>
+        <a href="#why">Why Space</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero reveal" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">Mission Control · Discover the Cosmos</p>
+          <h1>
+            Explore the
+            <span>Universe</span>
+          </h1>
+          <p>
+            Discover planets, galaxies, and the incredible stories behind the
+            worlds that surround our solar system.
+          </p>
+          <div class="hero-actions">
+            <a href="#earth" class="btn primary">Start Exploring</a>
+            <a href="#why" class="btn secondary">Why Space Matters</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong>8</strong>
+              <span>major planets</span>
+            </div>
+            <div>
+              <strong>100+</strong>
+              <span>space missions</span>
+            </div>
+            <div>
+              <strong>∞</strong>
+              <span>frontier of discovery</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/hero-illustration.svg" alt="Illustration of a spacecraft exploring space" />
+        </div>
+      </section>
+
+      <section class="planet-section" id="planets">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Planet Guides</p>
+          <h2>Meet the worlds around us</h2>
+          <p>
+            Each planet tells a different story about formation, climate, and
+            the ongoing search for life beyond Earth.
+          </p>
+        </div>
+
+        <section class="planet reveal" id="earth">
+          <div class="planet-image">
+            <img src="assets/earth.svg" alt="Illustration of Earth" />
+          </div>
+          <div class="planet-text">
+            <h2>Earth 🌍</h2>
+            <p>
+              Earth is our home planet and the only known world that supports
+              life. Its rich atmosphere, oceans, and diverse ecosystems make it
+              a rare and precious place in the solar system.
+            </p>
+            <a href="#earth-details" class="planet-link">Read full guide →</a>
+            <a href="https://science.nasa.gov/earth/" class="planet-link" target="_blank" rel="noopener noreferrer">Learn more about Earth on NASA →</a>
+            <div class="facts">
+              <div class="fact">
+                <h3>4.5B</h3>
+                <p>Years old</p>
+              </div>
+              <div class="fact">
+                <h3>71%</h3>
+                <p>Water covered</p>
+              </div>
+              <div class="fact">
+                <h3>1</h3>
+                <p>Moon</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="planet reverse reveal" id="mars">
+          <div class="planet-image">
+            <img src="assets/mars.svg" alt="Illustration of Mars" />
+          </div>
+          <div class="planet-text">
+            <h2>Mars 🔴</h2>
+            <p>
+              Mars is known as the Red Planet because iron-rich dust gives its
+              surface a rusty color. Scientists are studying it closely for clues
+              about water, ancient rivers, and future human exploration.
+            </p>
+            <a href="#mars-details" class="planet-link">Read full guide →</a>
+            <a href="https://science.nasa.gov/mars/" class="planet-link" target="_blank" rel="noopener noreferrer">Learn more about Mars on NASA →</a>
+            <div class="facts">
+              <div class="fact">
+                <h3>-63°C</h3>
+                <p>Average temp</p>
+              </div>
+              <div class="fact">
+                <h3>2</h3>
+                <p>Moons</p>
+              </div>
+              <div class="fact">
+                <h3>24.6h</h3>
+                <p>Day length</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="planet reveal" id="saturn">
+          <div class="planet-image">
+            <img src="assets/saturn.svg" alt="Illustration of Saturn" />
+          </div>
+          <div class="planet-text">
+            <h2>Saturn 🪐</h2>
+            <p>
+              Saturn stands out because of its spectacular ring system made of
+              countless icy particles. It is a giant world with dozens of moons
+              and a dramatic atmosphere that continues to inspire scientists.
+            </p>
+            <a href="#saturn-details" class="planet-link">Read full guide →</a>
+            <a href="https://science.nasa.gov/saturn/" class="planet-link" target="_blank" rel="noopener noreferrer">Learn more about Saturn on NASA →</a>
+            <div class="facts">
+              <div class="fact">
+                <h3>146+</h3>
+                <p>Known moons</p>
+              </div>
+              <div class="fact">
+                <h3>95×</h3>
+                <p>Earth mass</p>
+              </div>
+              <div class="fact">
+                <h3>7</h3>
+                <p>Main ring groups</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="detail-grid">
+        <article class="detail-card reveal" id="earth-details">
+          <h3>Earth in depth</h3>
+          <p>
+            Earth is the only planet confirmed to support life, thanks to its
+            balanced temperature, protective atmosphere, and liquid water. It
+            also hosts a dynamic climate system that shapes continents, weather,
+            and biodiversity.
+          </p>
+        </article>
+        <article class="detail-card reveal" id="mars-details">
+          <h3>Mars in depth</h3>
+          <p>
+            Mars once had rivers and lakes, and scientists believe it may have
+            harbored microbial life in the distant past. Its thin atmosphere and
+            cold climate make it one of the most promising targets for future
+            exploration.
+          </p>
+        </article>
+        <article class="detail-card reveal" id="saturn-details">
+          <h3>Saturn in depth</h3>
+          <p>
+            Saturn is a gas giant with a massive system of rings and many moons.
+            The planet’s atmosphere is mostly hydrogen and helium, and its rings
+            are made of icy fragments that continue to reveal details about the
+            early solar system.
+          </p>
+        </article>
+      </section>
+
+      <section class="timeline reveal" id="missions">
+        <div class="section-heading">
+          <p class="eyebrow">Mission Timeline</p>
+          <h2>Humanity’s journey into space</h2>
+        </div>
+        <div class="timeline-container">
+          <article class="timeline-card">
+            <h3>1957</h3>
+            <p>Sputnik 1 marked the beginning of the Space Age.</p>
+          </article>
+          <article class="timeline-card">
+            <h3>1969</h3>
+            <p>Apollo 11 landed the first humans on the Moon.</p>
+          </article>
+          <article class="timeline-card">
+            <h3>1998</h3>
+            <p>The ISS began operating as a research station in orbit.</p>
+          </article>
+          <article class="timeline-card">
+            <h3>2020+</h3>
+            <p>Modern missions continue to prepare for lunar and Martian travel.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="why reveal" id="why">
+        <div class="section-heading">
+          <p class="eyebrow">Why it matters</p>
+          <h2>Why space exploration matters</h2>
+          <p>
+            Space exploration improves technology, science, communications, and
+            our understanding of the planet we call home.
+          </p>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <h3>🛰️ Communication</h3>
+            <p>Satellites power GPS, weather forecasting, and global connectivity.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>🌦️ Weather</h3>
+            <p>Space data helps scientists predict storms and monitor climate change.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>🔬 Science</h3>
+            <p>Research in orbit leads to medical and engineering breakthroughs.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>🚀 Innovation</h3>
+            <p>Space missions inspire new ideas and prepare the next generation of explorers.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Space Explorer 🌌</h3>
+      <p>Discover the universe, explore planets, and imagine the future of humanity among the stars.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#earth">Planets</a>
+        <a href="#missions">Missions</a>
+        <a href="#why">Why Space</a>
+      </div>
+      <p class="copyright">© 2026 Space Explorer · All Rights Reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
